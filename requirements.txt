@@ -9,7 +9,7 @@ pyarrow>=14.0.0
 
 # ── Machine Learning ──
 scikit-learn>=1.3
-xgboost>=2.0
+xgboost>=2.0,<3.0.0  # <3.0.0 fijado por incompatibilidad con shap (base_score como lista JSON desde xgboost 3.0, ver shap/shap#4288)
 shap>=0.43
 joblib>=1.3
 lifelines>=0.27
