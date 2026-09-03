@@ -1,0 +1,57 @@
+{
+  "categoricas": {
+    "age_group": [
+      "00 years",
+      "01-04 years",
+      "05-09 years",
+      "10-14 years",
+      "15-19 years"
+    ],
+    "sex": [
+      "Female",
+      "Male"
+    ],
+    "tumor_type": [
+      "Ewing sarcoma",
+      "Osteosarcoma (other subtypes)",
+      "Osteosarcoma NOS"
+    ],
+    "primary_site": [
+      "CNS / meninges",
+      "Lower limb bones",
+      "Other / NOS",
+      "Pelvis / hip",
+      "Skull / head / jaw",
+      "Trunk / ribs / sternum",
+      "Upper limb bones",
+      "Vertebral column"
+    ],
+    "stage": [
+      "Localized",
+      "Regional",
+      "Distant"
+    ],
+    "surgery_code": [
+      "No surgery",
+      "Partial resection",
+      "Radical resection",
+      "Surgery NOS / Unknown"
+    ],
+    "radiation": [
+      "No radiation",
+      "Radiation",
+      "Recommended / Unknown",
+      "Refused"
+    ],
+    "chemotherapy": [
+      "No/Unknown",
+      "Yes"
+    ]
+  },
+  "numericas": {
+    "year_diagnosis": {
+      "min": 2000,
+      "max": 2023
+    }
+  }
+}

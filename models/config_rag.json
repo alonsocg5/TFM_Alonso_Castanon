@@ -1,0 +1,12 @@
+{
+  "qdrant_collection": "tfm_oncologia_pediatrica",
+  "qdrant_host": "localhost",
+  "qdrant_port": 6333,
+  "embedding_model": "sentence-transformers/paraphrase-multilingual-MiniLM-L12-v2",
+  "embedding_dim": 384,
+  "llm_model": "gpt-4o-mini",
+  "retrieval_k": 8,
+  "modelo_xgb_path": "../models/xgboost_final.pkl",
+  "esquema_categorias_path": "../models/esquema_categorias.json",
+  "umbral_decision": 0.18
+}
