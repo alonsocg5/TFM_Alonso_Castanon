@@ -192,13 +192,10 @@ class RAGState(TypedDict):
     docs: list
     answer: str
 
-
 def retrieve_node(state: RAGState) -> RAGState:
     docs = qdrant.similarity_search(state['question'], k=8)
     state["docs"] = docs
     return state
-
-
 
 def postfiltering_node(state: RAGState) -> RAGState:
     final_docs = []
@@ -219,8 +216,6 @@ def postfiltering_node(state: RAGState) -> RAGState:
             final_docs.append(doc)
     state['docs'] = final_docs
     return state
-
-
 
 def generate_node(state: RAGState) -> RAGState:
     contexto_prediccion = formatear_contexto_prediccion(state.get("prediccion"), state["perfil"])

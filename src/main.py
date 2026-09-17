@@ -12,6 +12,7 @@ from typing import Literal, Optional
 from fastapi import FastAPI, HTTPException
 from pydantic import BaseModel, Field
 from . import rag
+from fastapi.middleware.cors import CORSMiddleware
 
 app = FastAPI(
     title="Sistema de Apoyo a la Decisión Clínica en Oncología Pediátrica",
@@ -19,6 +20,14 @@ app = FastAPI(
     version="1.0.0",
 )
 
+# CORS: permite que la página de demo (frontend/index.html) pueda llamar a esta API desde el navegador.
+# OJO: allow_origins=["*"] es válido para este prototipo de demostración, en un despliegue real se restringiría.
+app.add_middleware(
+    CORSMiddleware,
+    allow_origins=["*"],
+    allow_methods=["*"],
+    allow_headers=["*"],
+)
 
 # ----------------------------------- Esquemas Pydantic ---------------------------------------
 
