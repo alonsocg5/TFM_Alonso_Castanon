@@ -187,7 +187,6 @@ uvicorn src.main:app --reload
 |--------|-------------|------------------------------------------------------------------------------|
 | POST   | `/predict`  | Predicción directa de supervivencia a 5 años a partir de los datos del paciente |
 | POST   | `/ask`      | Consulta en lenguaje natural al sistema RAG (perfil `oncologo` o `familia`)  |
-| GET    | `/health`   | Estado del servicio                                                          |
 
 ## Diseño de seguridad clínica
 
